@@ -1,0 +1,11 @@
+.navsty {
+  z-index: 99;
+  background-color: var(--color-primary);
+  transition: padding 800ms;
+}
+
+.active {
+  border-radius: 5px;
+  background-color: var(--home-bg);
+
+}

@@ -1,0 +1,65 @@
+<section class=" vh-100 py-5 mt-5">
+  <div class="container h-100 py-5 d-flex flex-column align-items-center justify-content-center">
+    <h2 class="fw-semibold fs-1">PORTFOLIO COMPONENT</h2>
+    <div class="star position-relative mb-3">
+      <div class="line"><i class="fa-solid fa-star"></i></div>
+    </div>
+    <div class="row gy-3">
+      <div class="col-md-4">
+        <div class="img-box position-relative" (click)="getSrc($event)">
+          <img [src]="src1" alt="home pic" class="w-100 rounded-3">
+          <div class="leyer rounded-3 d-flex align-items-center justify-content-center"
+            data-src="assets/imgs/poert1.png"><i class="fa-solid fa-plus" data-src="assets/imgs/poert1.png"></i>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="img-box position-relative" (click)="getSrc($event)">
+          <img [src]="src2" alt="cake pic" class="w-100 rounded-3">
+          <div class="leyer rounded-3 d-flex align-items-center justify-content-center"
+            data-src="assets/imgs/port2.png"><i class="fa-solid fa-plus" data-src="assets/imgs/port2.png"></i>
+          </div>
+
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="img-box position-relative" (click)="getSrc($event)">
+          <img [src]="src3" alt="circus pic" class="w-100 rounded-3">
+          <div class="leyer rounded-3 d-flex align-items-center justify-content-center"
+            data-src="assets/imgs/port3.png"><i class="fa-solid fa-plus" data-src="assets/imgs/port3.png"></i>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="img-box position-relative" (click)="getSrc($event)">
+          <img [src]="src1" alt="home pic" class="w-100 rounded-3">
+          <div class="leyer rounded-3 d-flex align-items-center justify-content-center"
+            data-src="assets/imgs/port1.png"><i class="fa-solid fa-plus" data-src="assets/imgs/port1.png"></i>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="img-box position-relative" (click)="getSrc($event)">
+          <img [src]="src2" alt="cake pic" class="w-100 rounded-3">
+          <div class="leyer rounded-3 d-flex align-items-center justify-content-center"
+            data-src="assets/imgs/port2.png"><i class="fa-solid fa-plus" data-src="assets/imgs/port2.png"></i>
+          </div>
+
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="img-box position-relative" (click)="getSrc($event)">
+          <img [src]="src3" alt="circus pic" class="w-100 rounded-3">
+          <div class="leyer rounded-3 d-flex align-items-center justify-content-center"
+            data-src="assets/imgs/port3.png"><i class="fa-solid fa-plus" data-src="assets/imgs/port3.png"></i>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<div (click)="hide($event)" class="modal__ d-flex align-items-center justify-content-center position-fixed fixed-box"
+  *ngIf="showFixed">
+  <img [src]="targetSrc" alt="circus pic" class=" rounded-3">
+</div>

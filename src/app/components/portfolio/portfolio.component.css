@@ -1,0 +1,42 @@
+.leyer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(26, 188, 156, 0.7);
+  inset: 0;
+  opacity: 0;
+  transition: opacity 500ms;
+  cursor: pointer;
+}
+
+.leyer i {
+  font-size: 100px;
+}
+
+h2,
+.line {
+  color: var(--color-primary);
+}
+
+.line::after,
+.line::before {
+  background-color: var(--color-primary);
+}
+
+.img-box:hover .leyer {
+  opacity: 1;
+}
+
+
+
+.fixed-box {
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  background-color: rgba(28, 117, 206, 0.3);
+}
+
+.fixed-box img {
+  width: 700px;
+}

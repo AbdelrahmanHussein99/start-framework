@@ -1,0 +1,41 @@
+h2,
+.line {
+  color: var(--color-primary);
+}
+
+.line::after,
+.line::before {
+  background-color: var(--color-primary);
+}
+
+.subbtn {
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 18px;
+  background-color: var(--home-bg);
+}
+
+.subbtn:active {
+  padding: 7px 17px;
+}
+
+input {
+  border: none;
+  box-shadow: 0px 1px 0px 0px #00000082;
+}
+
+label {
+  z-index: -1;
+  color: var(--home-bg);
+  left: 6px;
+  transition: top 500ms;
+}
+
+.topt {
+  top: 0px;
+}
+
+.topf {
+  top: 30px;
+}

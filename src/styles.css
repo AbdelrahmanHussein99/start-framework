@@ -1,1 +1,38 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+  --color-primary: #2c3e50ff;
+  --home-bg: #1abc9cff;
+  --footer: #1a252fff;
+  --primary-font: 'Roboto', sans-serif;
+}
+
+body {
+  color: white;
+  font-family: var(--primary-font);
+}
+
+.line::after {
+  position: absolute;
+  content: '';
+  top: 50%;
+  transform: translateY(-50%);
+  right: -90px;
+  background-color: white;
+  height: 4px;
+  width: 80px;
+}
+
+.line::before {
+  position: absolute;
+  content: '';
+  top: 50%;
+  transform: translateY(-50%);
+  left: -90px;
+  background-color: white;
+  height: 4px;
+  width: 80px;
+}
+
+#home {
+  background-color: var(--home-bg);
+}
